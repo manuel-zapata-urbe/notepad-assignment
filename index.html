@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css' rel='stylesheet'>
+  <title>Bloc de Notas</title>
+</head>
+
+<body>
+  <main class='w-6/12 m-auto p-2'>
+    <div class='text-center border-2 border-green-300 rounded-md m-5 p-3'>
+      <h2 class='text-xl my-7'>
+        Basic Notes App
+      </h2>
+      <p>Provide a file name or a directory name, if you choose both they'll get created simultaneously. </p>
+      <form method='POST' action='io_handler.php'>
+        <div>
+          <label for='fileName' class='block my-5 tracking-wider'>File Name</label>
+          <input id='fileName' class='border border-green-300 rounded-md focus:ring-2 focus:ring-green-600 mx-4 
+            p-2 hover:ring-1 hover:ring-green-400 w-1/2 text-sm text-black' type='text' name='fileName' />
+        </div>
+
+        <div>
+          <label for='directoryName' class='block my-5 tracking-wider'>Directory name</label>
+          <input id='directoryName' class='border border-green-300 rounded-md focus:ring-2 focus:ring-green-600 mx-4 
+            p-2 hover:ring-1 hover:ring-green-400 w-1/2 text-sm text-black' type='text' name='directoryName' />
+        </div>
+
+        <button class='bg-green-300 hover:bg-green-400 text-white p-3 rounded-md my-3' type='submit' name='submit'>Create</button>
+      </form>
+
+      <p class='italic opacity-75 my-3'>Manuel Zapata - 27.971.134 - N1013</p>
+
+    </div>
+  </main>
+</body>
+
+</html>
